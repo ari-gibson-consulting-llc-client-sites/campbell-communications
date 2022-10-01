@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@iconfu/svg-inject": "^1.2.3",
-    "@kidonng/daisyui": "^2.28.0",
-    "astro": "^1.4.0",
+    "@kidonng/daisyui": "^2.31.0",
+    "astro": "^1.4.2",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.5",
     "unocss": "^0.45.26",
