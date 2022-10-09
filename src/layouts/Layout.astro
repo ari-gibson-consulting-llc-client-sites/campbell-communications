@@ -21,14 +21,14 @@ const { title, classList } = Astro.props as Props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script>
-      // import SVGInject from "@iconfu/svg-inject";
-      // document.addEventListener("DOMContentLoaded", () => {
-      //   SVGInject(document.querySelectorAll("img.svg"), {
-      //     // afterLoad: function (svg: any) {
-      //     //   svg.classList.add("w-4/10", "md:w-6/10", "h-8/10");
-      //     // },
-      //   });
-      // });
+      import SVGInject from "@iconfu/svg-inject";
+      document.addEventListener("DOMContentLoaded", () => {
+        SVGInject(document.querySelectorAll("img.svg"), {
+          afterLoad: function (svg: any) {
+            svg.classList.add("w-8/10", "md:w-6/10", "h-8/10");
+          },
+        });
+      });
     </script>
   </head>
   <body class={classList}>
