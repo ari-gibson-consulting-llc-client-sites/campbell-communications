@@ -2,13 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
+import CTA from "../components/CTA.astro";
 ---
 
-<Layout title="Campbell Communications"
-  ><main class="font-sans">
-    <h1 class="text-2xl text-center mt-4">
-      New Things, New Tomorrows, New World
-    </h1>
+<Layout title="Campbell Communications" classList="bg-cc-base-500"
+  ><main class="font-sans text-base-content">
+    <CTA header="New Things, New Tomorrows, New World" subheader="Is your business ready to communicate?"/> 
     <About />
     <!-- <div class="h-screen"></div> -->
     <Contact />
