@@ -7,8 +7,7 @@
       "runtimeArgs": ["run-script", "dev"],
       "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node",
-      ""
+      "type": "node"
     }
   ]
 }

@@ -1,0 +1,23 @@
+---
+export interface Props {
+  label: string;
+  idForTarget?: string;
+  title?: string;
+}
+
+const { label, idForTarget = label, title = Astro.props.title ?? (label[0].toUpperCase() + label.slice(1)) } = Astro.props as Props;
+---
+
+<section aria-label={label} class="hero my-10 position-relative">
+  <a class="position-absolute -top-16 lg:-top-8" id={label}></a>
+  <div
+    class="hero-content box-content bg-cc-base-700 flex-col rounded-lg w-4/5 lg:!gap-20 lg:!p-10 lg:flex-row"
+  >
+    <div class="px-6 w-full max-w-4xl md:px-5 lg:px-0 lg:m-0">
+      <h1 class="text-5xl font-bold text-center lg:text-left">{title}</h1>
+      <p class="py-6 text-center lg:text-left lg:px-0 lg:m-0 w-full">
+      <slot />
+      </p>
+    </div>
+  </div>
+</section>

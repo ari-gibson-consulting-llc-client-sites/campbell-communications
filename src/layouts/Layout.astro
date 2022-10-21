@@ -32,8 +32,10 @@ const { title, classList } = Astro.props as Props;
     </script>
   </head>
   <body class={classList}>
-    <Title />
-    <Nav />
+    <header>
+      <Title />
+      <Nav />
+    </header>
     <slot />
   </body>
 </html>

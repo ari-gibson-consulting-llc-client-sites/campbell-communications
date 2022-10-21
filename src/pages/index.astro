@@ -1,10 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import About from "../components/content/About.astro";
-import Contact from "../components/content/Contact.astro";
 import CTA from "../components/CTA.astro";
-import Experience from "../components/content/Experience.astro";
 import Footer from "../components/Footer.astro";
+import Section from "../components/ContentSection.astro";
 ---
 
 <Layout title="Campbell Communications">
@@ -14,8 +13,17 @@ import Footer from "../components/Footer.astro";
       subheader="Are you ready to communicate?"
     />
     <About />
-    <Experience />
-    <Contact />
+    <Section label="experience">**placeholder content**</Section>
+    <Section label="contact" title="Get in Touch">
+      Need help with your communication efforts? My line is open; please reach
+      out for a consultation.
+      <a href="mailto:jcampb1001@aol.com" class="ml-2 lg:ml-0 display-block"
+        >Email: jcampb1001@aol.com</a
+      >
+      <a href="tel:3039319663" class="ml-2 lg:ml-0 display-block"
+        >Call/Text: (303) 931-9663</a
+      >
+    </Section>
   </main>
   <Footer />
 </Layout>
