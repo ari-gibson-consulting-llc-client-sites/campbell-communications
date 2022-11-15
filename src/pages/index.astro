@@ -5,6 +5,7 @@ import CTA from "../components/CTA.astro";
 import Footer from "../components/Footer.astro";
 import Section from "../components/ContentSection.astro";
 import Card from "../components/Card.astro";
+import projects from "../data/experience";
 ---
 
 <Layout title="Campbell Communications">
@@ -16,32 +17,11 @@ import Card from "../components/Card.astro";
     <About />
     <Section label="experience">
       <div class="flex flex-wrap gap-4 box-border">
-        <Card title="Norwest Banks">
-          Created a complete marketing plan to help Norwest become the premier
-          bank of Hastings, NE
-        </Card>
-        <Card title="Boulder Rotary Club">
-          Wrote the forward for two books published by the group: one of which
-          was a recipe, the other was a collection of art and poems from local
-          4th graders talking about peace
-        </Card>
-        <Card title="Henry Doorly Zoo">
-          Completed various writing pieces including their guide book,
-          fundrasing materials, and membership events brochures
-        </Card>
-        <Card title="Western Disposal"
-          >Created promotional to help students gain insight into preservation
-          and pollution control</Card
-        >
-        <Card title="Marriott Hotel"
-          >Planned opening for Nebraska's first Marriott hotel and continued
-          producing promotional materials with the hotel's marketing director</Card
-        >
-        <Card title="United States Holocaust Memorial Museum"
-          >Headed fundrasing in Nebraska for creation of national Holocaust
-          Memorial Museum, including the planning and presentation of fundrasing
-          events
-        </Card>
+        {
+          projects.map((project) => (
+            <Card title={project.title}>{project.desc}</Card>
+          ))
+        }
       </div>
     </Section>
     <Section label="contact" title="Get in Touch">
