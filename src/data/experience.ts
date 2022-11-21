@@ -10,7 +10,7 @@ const projects: Array<Project> = [
   },
   {
     title: "Boulder Rotary Club",
-    desc: 'Wrote the forward for two books published by the group: one of which was a recipe book during the pandemic, the other was a collection of art and poems from local 9-year-olds responding to the prompt "What is Peace"',
+    desc: 'Current public relations chair and a member of the District\'s public relations team. Wrote the forward for two books published by the group: one of which was a recipe book during the pandemic, the other was a collection of art and poems from local 9-year-olds responding to the prompt "What is Peace"',
   },
   {
     title: "Henry Doorly Zoo",

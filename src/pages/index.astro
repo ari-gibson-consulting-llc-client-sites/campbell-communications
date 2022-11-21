@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import About from "../components/content/About.astro";
+import Bio from "../components/content/Bio.astro";
 import CTA from "../components/CTA.astro";
 import Footer from "../components/Footer.astro";
 import Section from "../components/ContentSection.astro";
@@ -14,16 +14,23 @@ import projects from "../data/experience";
       header="New Things, New Tomorrows, New World"
       subheader="Are you ready to communicate?"
     />
-    <About />
+    <Section label="services">
+      Campbell Communications offers a variety of copy and other public
+      relations solutions, including, press releases, event planning, hand book
+      copy, newsletters, ad copy, speeches, narratives, forward or introductions
+      to books, newsletters, business and personal strategies for reaching your
+      goal etc.
+    </Section>
     <Section label="experience">
       <div class="flex flex-wrap gap-4 box-border">
         {
           projects.map((project) => (
             <Card title={project.title}>{project.desc}</Card>
-          ))
-        }
+            ))
+          }
       </div>
     </Section>
+    <Bio />
     <Section label="contact" title="Get in Touch">
       Need help with your communication efforts? My line is open; please reach
       out for a consultation.
