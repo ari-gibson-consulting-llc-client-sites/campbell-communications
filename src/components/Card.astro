@@ -6,17 +6,9 @@ export interface Props {
 const { title } = Astro.props as Props;
 ---
 
-<div class="card bg-base-100 shadow-xl grow shrink basis-[calc(50%-0.5rem)] min-w-full lg:min-w-0">
+<div class="card bg-base-100 shadow-xl grow shrink basis-[calc(50%-0.5rem)] min-w-full lg:min-w-0 text-lg">
   <div class="card-body">
     <h2 class="card-title">{title}</h2>
     <p><slot /></p>
   </div>
 </div>
-
-<style>
-  .something {
-    /* display: flex; */
-    flex: 1 1 calc(50% - 0.5rem);
-    /* min-width: 25rem; */
-  }
-</style>
