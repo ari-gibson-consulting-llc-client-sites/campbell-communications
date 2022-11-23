@@ -26,7 +26,7 @@ const projects: Array<Project> = [
   },
   {
     title: "United States Holocaust Memorial Museum",
-    desc: "Headed fundraising in Nebraska for creation of national Holocaust Memorial Museum, including the planning and presentation of fundraising events",
+    desc: "Headed fundraising in Nebraska for creation of national Holocaust Memorial Museum in Washington, D.C., including the planning and presentation of fundraising events",
   },
   {
     title: "Majers Corporation",
@@ -34,7 +34,7 @@ const projects: Array<Project> = [
   },
   {
     title: "Other",
-    desc: "Produced numerous other plans, public relations, and marketing plans for a variety of companies, individuals, and organizations during her PR, editing, and advertising career",
+    desc: "Produced numerous other plans, public relations, and marketing plans for a variety of companies, individuals, and organizations during her PR, writing, and advertising career",
   },
 ];
 
