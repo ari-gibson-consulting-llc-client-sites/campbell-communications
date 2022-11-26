@@ -26,7 +26,7 @@ const projects: Array<Project> = [
   },
   {
     title: "United States Holocaust Memorial Museum",
-    desc: "Headed fundraising in Nebraska for creation of national Holocaust Memorial Museum in Washington, D.C., including the planning and presentation of fundraising events",
+    desc: "Headed fundraising in Nebraska for the creation of the Holocaust Memorial Museum in Washington, D.C., including the planning and presentation of fundraising events",
   },
   {
     title: "Majers Corporation",
